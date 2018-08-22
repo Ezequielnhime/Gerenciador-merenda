@@ -10,15 +10,21 @@ public class Endereco {
     private int numero;
     private String bairro;
     private String cidade;
+    private String estado;
+    private String rua;
 
     public Endereco() {
     }
 
-    public Endereco(int numero, String bairro, String cidade) {
+    public Endereco(int numero, String bairro, String cidade, String estado, String rua) {
         this.numero = numero;
         this.bairro = bairro;
         this.cidade = cidade;
+        this.estado = estado;
+        this.rua = rua;
     }
+
+    
 
     public long getId() {
         return id;
@@ -51,6 +57,23 @@ public class Endereco {
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getRua() {
+        return rua;
+    }
+
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
+    
     
     
 }
